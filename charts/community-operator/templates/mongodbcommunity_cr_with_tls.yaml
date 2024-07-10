@@ -150,7 +150,7 @@ spec:
   users:
   {{- toYaml .Values.resource.users | nindent 4 }}
   {{- end}}
-  template:
+  statefulSet:
     spec:
     {{- with .Values.resource.tolerations }}
       tolerations: {{- toYaml . | nindent 8 }}
