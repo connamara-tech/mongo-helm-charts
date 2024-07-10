@@ -28,6 +28,7 @@ jobs:
       - name: Package and Push Charts
         run: |
           pushd charts
+          helm dependency update
           helm package community-operator
           helm push community-operator oci://ghcr.io/connamara-tech
           popd
