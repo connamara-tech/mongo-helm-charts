@@ -48,6 +48,10 @@ operator:
 
   securityContext: {}
 
+  # Tolerations for operator
+  # ref: https://kubernetes.io/docs/concepts/configuration/taint-and-toleration/
+  tolerations: []
+
 ## Operator's database
 database:
   name: mongodb-database
