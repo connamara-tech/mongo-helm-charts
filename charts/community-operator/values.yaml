@@ -109,6 +109,7 @@ resource:
     certManager:
       certDuration: 8760h   # 365 days
       renewCertBefore: 720h   # 30 days
+  tolerations: []
 
   users: []
   # if using the MongoDBCommunity Resource, list any users to be added to the resource
